@@ -1,13 +1,18 @@
+html, body, #root, #App, #App>div {
+  height: 100%
+}
+
 body {
   background-color: #fffef6;
   width: 60%;
   margin: auto;
 }
 
-.App {
+#App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   color: #516880;
   font-family: sans-serif;
   text-align: center;

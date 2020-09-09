@@ -32,7 +32,7 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div id="App">
       {itemAdded === false && (
         <h2 id="intro-text">
           To add an item to your list, click the circle below
