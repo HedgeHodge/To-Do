@@ -38,9 +38,11 @@ export default function App() {
           To add an item to your list, click the circle below
         </h2>
       )}
-      {items.map((item, index) => (
-        <ToDoItem key={index} id={index} text={item} />
-      ))}
+      <div id="to-do-items">
+        {items.map((item, index) => (
+          <ToDoItem key={index} id={index} text={item} />
+        ))}
+      </div>
       {plusButtonClicked === false ? (
         <PlusButton handleClick={handleClick} />
       ) : (

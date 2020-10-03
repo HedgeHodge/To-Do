@@ -1,24 +1,22 @@
-html, body, #root, #App, #App>div {
-  height: 100%
+html, body, #App, #root {
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
   background-color: #fffef6;
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
 #App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   color: #516880;
-  font-family: sans-serif;
   text-align: center;
 }
 
 .main-btn {
+  position: fixed;
+  bottom: 10%;
   background-color: #516880;
   color: white;
   border-radius: 50px;
@@ -33,6 +31,8 @@ body {
 }
 
 .text-input {
+  position: fixed;
+  bottom: 10%;
   background-color: #516880;
   color: white;
   border-radius: 50px;
@@ -43,4 +43,17 @@ body {
 
 .text-input::placeholder {
   color: white;
+}
+
+.to-do {
+  display: block;
+  background-color: #EAF4DA;
+  font-weight: 200;
+  font-size: 1.2em;
+  padding: 7% 10%;
+  border-radius: 14px;
+}
+
+#to-do-items {
+  width: 100%;
 }
